@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>응용예시(게시판)</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+<body>
+    
+    <h2>게시판 리스트</h2>
+    <!-- 데이터베이스에 저장 -->
+    <!-- 요청 -> 서버 Controller -> Service -> DAO -> DB -->
+    <!-- DB -> DAO -> Service -> Controller -> View -->
+    <!-- 게시글의 내용? 데이터베이스에 저장 -->
+    <!-- 게시글을 식별할 수 있는 컬럼이 필요(글번호) -->
+    <!-- 게시글을 클릭하면 글번호를 알 수 있도록 -->
+    <!-- 글번호를 알아야 해당 게시글의 content를 볼 수 있다. -->
+
+    <br>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>글번호</th>
+                <th>제목</th>
+                <th>작성자</th>
+                <th>조회수</th>
+                <th>작성일</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>6131</td>
+                <td>청담동점집.압구정점집.신사동점집</td>
+                <td>태을천천상화</td>
+                <td>5</td>
+                <td>2022.10.31</td>
+            </tr>
+            <tr>
+                <td>6312</td>
+                <td>도곡동점집.삼성동용한점집.역삼동점집</td>
+                <td>lsetew166</td>
+                <td>2</td>
+                <td>2022.10.31</td>
+            </tr>
+            <tr>
+                <td>6191</td>
+                <td>올해 부자되게 해주세요 제발..</td>
+                <td>대구포에버</td>
+                <td>10</td>
+                <td>2022.10.19</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br><br>
+    
+    선택된 게시글 정보 :
+    <label id="11">글번호</label>
+    <label id="12">제목</label>
+    <label id="13">작성자</label>
+    <label id="14">조회수</label>
+    <label id="15">작성일</label>
+    
+</body>
+</html>
